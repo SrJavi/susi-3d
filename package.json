@@ -1,6 +1,7 @@
 {
-  "name": "box-yard",
+  "name": "susi-3d",
   "private": true,
+  "homepage": "https://SrJavi.github.io/susi-3d",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,7 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build:data": "node tools/parseDrawioToJson.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.8",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "fast-xml-parser": "^5.2.3",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
