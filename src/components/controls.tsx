@@ -1,9 +1,10 @@
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
-useGLTF.preload('/src/assets/dormitorio.glb');
+// Preload fuera del componente
+useGLTF.preload('/susi-3d/dormitorio.glb');
 
 export default function Controls() {
-	const gltf = useGLTF('/src/assets/dormitorio.glb');
+	const gltf = useGLTF('/susi-3d/dormitorio.glb');
 	return (
 		<>
 			<ambientLight intensity={1} />
